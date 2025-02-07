@@ -1,9 +1,9 @@
 default_inputs:
-  income: 
-  taxes_paid: 
-  investment_profits: 
-  rrsp_room: 
-  medical_expenses: 
+  income: 100000 
+  taxes_paid: 30000
+  investment_profits: 5000 
+  rrsp_room: 50000
+  medical_expenses: 2000 
   is_quebec: true # true or false
 
 # min, max, rate
