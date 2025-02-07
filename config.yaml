@@ -1,10 +1,10 @@
 default_inputs:
-  income: 100000 
-  taxes_paid: 30000
-  investment_profits: 5000 
-  rrsp_room: 50000
-  medical_expenses: 2000 
-  is_quebec: true # true or false
+  income: #income  
+  taxes_paid: #taxes_paid
+  investment_profits: #investment_profits 
+  rrsp_room: #rrsp_room_from_previous_year
+  medical_expenses: #medical_expenses 
+  is_quebec: true #quebecois or not
 
 # min, max, rate
 federal_brackets:

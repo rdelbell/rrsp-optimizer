@@ -15,6 +15,33 @@ Use at your own risk. Not Financial Advice.
 ## Example
 
 ```
+$ cat ./config.yaml 
+default_inputs:
+  income: #income  
+  taxes_paid: #taxes_paid
+  investment_profits: #investment_profits 
+  rrsp_room: #rrsp_room_from_previous_year
+  medical_expenses: #medical_expenses 
+  is_quebec: true #quebecois or not
+
+# min, max, rate
+federal_brackets:
+  - [0, 53359, 0.15]
+  - [53359, 106717, 0.205]
+  - [106717, 165430, 0.26]
+  - [165430, 235675, 0.29]
+  - [235675, null, 0.33]
+
+# min, max, rate
+quebec_brackets:
+  - [0, 46395, 0.15]
+  - [46395, 92790, 0.20]
+  - [92790, 112655, 0.24]
+  - [112655, null, 0.2575]
+```
+
+```
+$ python rrsp_optimizer.py
 --- RRSP Contribution Analysis ---
 Contribution    Taxable Income    Total Tax Liability    Tax Savings    Net Balance
 --------------  ----------------  ---------------------  -------------  -------------
