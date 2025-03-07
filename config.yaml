@@ -1,22 +1,23 @@
 default_inputs:
-  income: #income  
-  taxes_paid: #taxes_paid
-  investment_profits: #investment_profits 
-  rrsp_room: #rrsp_room_from_previous_year
-  medical_expenses: #medical_expenses 
-  is_quebec: true #quebecois or not
+  income: 76000  
+  taxes_paid: 23845
+  investment_profits: 6000 
+  rrsp_room: 41000
+  medical_expenses: 1000 
+  is_quebec: true 
 
 # min, max, rate
 federal_brackets:
-  - [0, 53359, 0.15]
-  - [53359, 106717, 0.205]
-  - [106717, 165430, 0.26]
-  - [165430, 235675, 0.29]
+  - [0, 57375, 0.15]
+  - [57375, 114750, 0.205]
+  - [114750, 177882, 0.26]
+  - [177882, 353414, 0.29]
   - [235675, null, 0.33]
 
 # min, max, rate
+# ref: https://www.revenuquebec.ca/en/citizens/income-tax-return/completing-your-income-tax-return/income-tax-rates/
 quebec_brackets:
-  - [0, 46395, 0.15]
-  - [46395, 92790, 0.20]
-  - [92790, 112655, 0.24]
-  - [112655, null, 0.2575]
+  - [0, 51780, 0.14]
+  - [46395, 106495, 0.19]
+  - [106495, 126000, 0.24]
+  - [126000, null, 0.2575]
